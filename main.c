@@ -53,9 +53,9 @@ void displaymatrix(NODE start,int m,int n)
 {   NODE temp=start ;
     int i,j;
 
-    for(i=1 ; i<=0; i++)
+    for(i=1 ; i<=m; i++)
     {
-     for(j=1 ; j<=0; j++)
+     for(j=1 ; j<=n; j++)
      {
          if(temp!=NULL && temp->row==i && temp->col==j)
          {
@@ -79,9 +79,9 @@ int main ()
     printf("\n read order of the matrix \n");
     scanf("%d %d,&m,&n ");
     printf("\n read the element \n  ");
-    for(i=1 ; i<=0; i++)
+    for(i=1 ; i<=m; i++)
     {
-     for(j=1 ; j<=0; j++)
+     for(j=1 ; j<=n; j++)
      {
          scanf("%d",&item);
          if(item!=0)
@@ -95,3 +95,4 @@ int main ()
     return 0 ;
 
 }
+
